@@ -4,10 +4,6 @@
 
 This application allows users to create and manage shopping lists. You can add items to lists and efficiently organize your shopping tasks.
 
-## Deployment
-
-The application is deployed online and can be accessed at [Shopping List Management](https://my-unique-artos-wsd-deployment-i.onrender.com).
-
 ## Local Setup
 
 ### Prerequisites
@@ -19,7 +15,7 @@ Make sure you have Docker and Docker Compose installed on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:ParisaKalaki/shopping-lists.git
    cd shopping-list-management
    ```
 
@@ -36,4 +32,3 @@ Make sure you have Docker and Docker Compose installed on your machine.
 ## Contributing
 
 Feel free to contribute to the development of this application. Fork the repository, make your changes, and submit a pull request.
-# shopping-lists

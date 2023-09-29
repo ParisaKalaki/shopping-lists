@@ -17,7 +17,7 @@ const findCurrentItem = async (listId) => {
 };
 const viewItems = async (listId) => {
   return await sql`SELECT * FROM shopping_list_items
-  WHERE shopping_list_id = ${listId}`;
+  WHERE shopping_list_id = ${listId} ORDER BY collected ASC, name;`;
 };
 
 const collectItem = async (itemId, listId) => {

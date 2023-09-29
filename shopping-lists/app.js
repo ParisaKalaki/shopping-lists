@@ -1,5 +1,5 @@
 import { serve } from "./deps.js";
-import { configure, renderFile } from "./deps.js";
+import { configure } from "./deps.js";
 import * as listController from "./controllers/listController.js";
 import * as itemController from "./controllers/itemController.js";
 import * as mainController from "./controllers/mainController.js";
@@ -7,9 +7,7 @@ import * as mainController from "./controllers/mainController.js";
 configure({
   views: `${Deno.cwd()}/views/`,
 });
-const responseDetails = {
-  headers: { "Content-Type": "text/html;charset=UTF-8" },
-};
+
 const handleRequest = async (request) => {
   const url = new URL(request.url);
   if (url.pathname === "/") {
